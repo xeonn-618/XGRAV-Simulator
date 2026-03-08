@@ -43,7 +43,7 @@ Returns a NumPy array of shape `(nframes, nbodies, 3)` containing the XYZ positi
 from XGRAV.simulator import runSimulation
 
 data = runSimulation(sim, nbodies=2, nframes=365, dt=3600, steps_per_frame=24)
-# 365 frames, 1-hour physics step, 24 steps saved per frame → ~1 simulated year
+# 8760 total steps (365 × 24), 1 frame saved every 24 steps, 1-hour timestep → ~1 simulated year
 ```
 
 **Saving & loading data:**
